@@ -30,14 +30,14 @@ const SignUp = () => {
   <div className=' bg-white h-4/5 w-96 shadow-xl rounded-lg'>
    <form  onSubmit={handleSubmit(loginnn)}>
    <label htmlFor="username">Username</label>
-         <input
+         <input className='text-black'
            type="text"
            id="username"
            {...register('username', { required: "Username is required" })}
          />
 
 <label htmlFor="email">E-mail</label>
-         <input className='border-black'
+         <input className='text-black'
            type="text"
            id="email"
            {...register('email', {
@@ -49,28 +49,28 @@ const SignUp = () => {
          />
 
 <label htmlFor="password">Password</label>
-         <input className='border-black'
+         <input className='text-black'
            type="password"
            id="password"
            {...register('password', { required: "Password is required" })}
          />
 
 <label htmlFor="age">Age</label>
-         <input
+         <input  className='text-black'
            type="number"
            id="age"
            {...register('age', { required: "Age is required" })}
          />
 
            <label htmlFor="gender">Gender</label>
-         <input
+         <input  className='text-black'
            type="text"
            id="gender"
            {...register('gender', { required: "Gender is required" })}
          /> 
          
          <label htmlFor="religon">Religion</label>
-         <input
+         <input  className='text-black'
            type="text"
            id="religon"
            {...register('religon', { required: "Religion is required" })}
